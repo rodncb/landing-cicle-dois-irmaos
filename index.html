@@ -844,7 +844,7 @@ dialog .btn{margin-top:24px}
     var list = ints.length > 1 ? ints.slice(0,-1).join(", ") + " e " + ints[ints.length-1] : ints[0];
     var html = '<h3>Pronto, ' + esc(first) + '! Seu guia está aqui.</h3>' +
       '<p>Baixe o PDF agora e leia com calma:</p>' +
-      '<a class="btn" href="' + CONFIG.pdf + '" target="_blank" rel="noopener" download>Baixar o PDF <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 12 H5 M11 5 L4 12 L11 19"/></svg></a>' +
+      '<a class="btn" href="' + CONFIG.pdf + '" target="_blank" rel="noopener" download="Guia_Nova_Mobilidade_Cicle_Dois_Irmaos.pdf">Baixar o PDF <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 12 H5 M11 5 L4 12 L11 19"/></svg></a>' +
       '<div class="wa-list"><p class="note"><b>Quer ajuda para escolher?</b> Você marcou interesse em ' + esc(list) + '. Fale com a gente no WhatsApp:</p>' +
       '<a class="btn dark" href="' + wa("Oi! Baixei o Guia da Nova Mobilidade e tenho interesse em " + list + ". Podem me ajudar?") + '" target="_blank" rel="noopener" data-wa>Falar no WhatsApp <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 12 H5 M11 5 L4 12 L11 19"/></svg></a>';
     if (ints.some(function(i){ return testDriveSet.indexOf(i) > -1; }))

@@ -43,5 +43,10 @@
 # ---------- Página de erro ----------
 ErrorDocument 404 /index.html
 
+# arquivos internos do repositório (documentação) não ficam públicos
+<FilesMatch "\.(md|gitignore)$|^_headers$">
+  Require all denied
+</FilesMatch>
+
 # não listar diretórios
 Options -Indexes
